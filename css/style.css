@@ -1,0 +1,421 @@
+#panorama {
+    width: 100vw;
+    height: 100vh;
+}
+.custom-hotspot {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/1.jpg);
+    /* box-shadow: 15px 15px 50px rgba(216,170,248,0.75);
+    -webkit-box-shadow: 11px 11px 60px 34px rgba(216,170,248,0.75);
+    -moz-box-shadow: 11px 11px 60px 34px rgba(216,170,248,0.75); */
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+
+}
+
+@-moz-keyframes morphing {
+    0% {
+      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+      box-shadow: 15px 15px 50px rgba(216,170,248,0.75);
+    }
+    25% {
+      border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    50% {
+      border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    75% {
+      border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    100%{
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+        box-shadow: 15px 15px 50px rgba(216,170,248,0.75); 
+    }
+  }
+  @-webkit-keyframes morphing {
+    0% {
+      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+      box-shadow: 15px 15px 50px rgba(216,170,248,0.75);
+    }
+    25% {
+      border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    50% {
+      border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    75% {
+      border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    100%{
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+        box-shadow: 15px 15px 50px rgba(216,170,248,0.75); 
+    }
+  }
+  @-o-keyframes morphing {
+    0% {
+      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+      box-shadow: 15px 15px 50px rgba(216,170,248,0.75);
+    }
+    25% {
+      border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    50% {
+      border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    75% {
+      border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    100%{
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+        box-shadow: 15px 15px 50px rgba(216,170,248,0.75); 
+    }
+  }
+  @keyframes morphing {
+    0% {
+      border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+      box-shadow: 15px 15px 50px rgba(216,170,248,0.75);
+    }
+    25% {
+      border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    50% {
+      border-radius: 50% 50% 33% 67%/55% 27% 73% 45%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    75% {
+      border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+      box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+    }
+    100%{
+        border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+        box-shadow: 15px 15px 50px rgba(216,170,248,0.75); 
+    }
+  }
+  
+
+.custom-hotspot:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/hero.png);
+
+    
+}
+.custom-hotspot2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/2.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot2:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/what-lof.png);
+   
+}
+.custom-hotspot3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/3.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot3:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/lof-plat.png);
+   
+}
+.custom-hotspot4 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/12.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot4:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/lof-plat2.png);
+  
+}
+.custom-hotspot5 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/4.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot5:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/tokonomics.png);
+   
+}
+.custom-hotspot6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/5.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot6:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/partners.png);
+   
+}
+.custom-hotspot7 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/6.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot7:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/dashboard.png);
+    
+}
+.custom-hotspot8 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/7.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot8:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/roadmap.png);
+  
+}
+.custom-hotspot9 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/8.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot9:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/whitpaper.png);
+  
+}
+.custom-hotspot10 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/9.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot10:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/team-vision.png);
+ 
+}
+
+.custom-hotspot11 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/10.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot11:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/merch-store.png);
+   
+}
+.custom-hotspot12 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    animation: morphing 10s infinite;
+  overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-image: url(../img/11.jpg);
+    box-shadow: -10px -5px 50px rgba(216,170,248,0.75);
+}
+.custom-hotspot12:hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/contact.png);
+    height: 200px;
+    width: 200px;
+   
+}
+
+
+div.custom-tooltip span {
+    display: none!important;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    max-width: 200px;
+    padding: 5px 10px;
+    margin-left: -220px;
+    cursor: default;
+    top: 40px;
+}
+div.custom-tooltip:hover span{
+    visibility: visible;
+}
+div.custom-tooltip:hover span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    bottom: -20px;
+    left: -10px;
+    margin: 0 50%;
+}
+/*        Content styling*/
+    video{
+        width: 100%;
+    }
+    .logo{
+       position: absolute;
+        z-index: 999;
+        width: 250px;
+        height: 200px;
+        top: 20px;
+        left: 83px;
+    }
+    .con{
+        position: absolute;
+        z-index: 999;
+        color: white;
+        bottom: 115px;
+        left: 20px;
+    }
+    .con2{
+        position: absolute;
+        z-index: 999;
+        color: white;
+        left: 20px;
+        bottom: 20px;
+        
+    }
+    .icon{
+        position: absolute;
+        z-index: 999;
+        right: 50px;
+        top: 20px;
+        font-size: 30px;
+    }
+    .icon a{
+        color: white;
+    }
+    .icon a:hover{
+       color: gray;
+    }
+    /*    Media Queries*/
+    @media only screen and (min-width:240px) and (max-width:480px){
+     .con{
+        position: absolute;
+        z-index: 999;
+        color: red;
+        bottom: 115px;
+        left: 20px;
+    }   
+    }

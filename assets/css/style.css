@@ -1,0 +1,1651 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+
+@font-face {
+  font-family: allround-Font;
+  src: url(../fonts/All-Round-Gothic-Bold.ttf);
+}
+
+.slider-wrapper {
+  height: 1080px !important;
+}
+html {
+  scroll-behavior: smooth;
+  
+}
+/* body css start */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Hind Vadodara", sans-serif;
+  color: white;
+  background-color: #000000;
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #fff !important;
+}
+a:hover{
+  text-decoration: none;
+  color: #fff !important;
+}
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  display: none;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: allround-Font !important;
+}
+.me-3{
+  margin-right: 1rem;
+}
+button:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+.btn:focus {
+  color: white !important;
+}
+input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+textarea:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+.main-color {
+  color: #d8aaf8;
+}
+button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+.btn-outline-success:focus {
+  box-shadow: none !important;
+}
+.btn-outline-primary:focus {
+  box-shadow: none !important;
+}
+.btn-outline-danger:focus {
+  box-shadow: none !important;
+}
+.all-round {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+  font-family: allround-Font !important;
+}
+
+/* body css end */
+/* navbar css start  */
+.navigation {
+  height: 70px;
+ 
+  opacity: 100%;
+  background: black !important;
+  border: none !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 99999;
+}
+.brand {
+  position: absolute;
+  padding: 8px;
+  float: left;
+  margin-left: 50px;
+  line-height: 55px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand>img{
+  width: 100%;
+  height: 100%;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav-container {
+
+  margin: 0 auto;
+}
+nav {
+  margin-left: 140px;
+  float: left;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 15px;
+}
+nav ul li {
+  float: left;
+  position: relative;
+  margin-left: 4px;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 30px;
+  line-height: 55px;
+  color: #fff;
+  /* background: #262626; */
+  text-decoration: none;
+  font-family: "Hind Vadodara", sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 600;
+}
+nav ul li a {
+  background: transparent;
+  color: #fff;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: transparent !important;
+  color: #d8aaf8 !important;
+  list-style: none !important;
+  text-decoration: none !important;
+}
+.navbar-dropdown li a {
+  background: #2581dc;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " \025BE";
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+.navbar-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  background: #fff;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.25);
+}
+.nav-ser{
+  margin-top: 50px;
+}
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  height: 55px;
+  width: 70px;
+}
+@media only screen and (max-width: 1700px) {
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    padding: 55px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+  .navbar-dropdown {
+    position: static;
+  }
+  .nav-list {
+    opacity: 93%;
+    background: black !important;
+    border: none !important;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#navbar-toggle {
+  position: absolute;
+  left: 18px;
+  top: 15px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#navbar-toggle span,
+#navbar-toggle span:before,
+#navbar-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 30px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#navbar-toggle span:before {
+  top: -10px;
+}
+#navbar-toggle span:after {
+  bottom: -10px;
+}
+#navbar-toggle.active span {
+  background-color: transparent;
+}
+#navbar-toggle.active span:before,
+#navbar-toggle.active span:after {
+  top: 0;
+}
+#navbar-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#navbar-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+
+/* navbar css End */
+
+/* hero section css start */
+
+.hero-heading-padding {
+  padding: 230px 0px 10px 132px;
+}
+.hero-paragrah {
+  font-family: "Hind Vadodara", sans-serif !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -0.03em;
+  width: 133%;
+}
+.main-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 120px;
+}
+
+.hero-btn {
+  background-color: black;
+  font-family: allround-Font !important;
+  color: white;
+  font-size: 14px;
+  border-color: #d8aaf8;
+  border-radius: 8px;
+  border-width: 2px;
+  padding: 9px 25px;
+  margin: 33px 0px 55px -2px;
+}
+.hero-btn:hover {
+  color: white;
+  border-color: #d8aaf8 !important;
+  background-color: #d8aaf8;
+}
+.hero-btn1 {
+  background-color: black;
+  font-family: allround-Font !important;
+  color: white;
+  font-size: 14px;
+  border-color: #d8aaf8;
+  border-radius: 8px;
+  border-width: 2px;
+  padding: 9px 25px;
+  margin: 4px 0px 55px 20px;
+}
+.hero-btn1:hover {
+  color: white;
+  border-color: #d8aaf8 !important;
+  background-color: #d8aaf8;
+}
+/* hero section css end */
+/* lof section 1 start */
+.main-heading-lof-section {
+  font-family: allround-Font !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+/* lof section 1 end  */
+
+/* lof plateform section 2 css start */
+.feat-head{
+  display: flex;
+}
+.slider-div h2 {
+  font-family: "Hind Vadodara", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0px !important;
+}
+.slider-div p {
+  font-family: "Hind Vadodara", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  padding-right: 170px;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-right: 150px !important;
+}
+@media only screen and (max-width: 600px) {
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-right: 0px !important;
+  }
+}
+@media only screen 
+  and (min-device-width: 1025px) 
+  and (max-device-width: 1259px){
+    .owl-theme .owl-nav.disabled + .owl-dots {
+      margin-right: 0px !important;
+    }
+  }
+/* lof plateform section 2 css end */
+/* tokenomics section css  start*/
+.fillbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  border-left-color: #d8aaf8;
+  border-right-color: #d8aaf8;
+  background: linear-gradient(to right, #d8aaf8 0%, #d8aaf8 100%);
+}
+.fillbar:after {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  display: block;
+
+  height: 8px;
+  width: 40%;
+  background: #1e222c;
+}
+
+/* feature */
+/* swiper css start  */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* swiper css End  */
+#faqs .qa-pairs dl {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+#faqs .qa-pairs dl > * {
+  font-family: "Hind Vadodara", sans-serif !important ;
+  font-size: 18px;
+  border-radius: 10px;
+}
+#faqs .qa-pairs dt {
+  background: #121016;
+  order: 1;
+  z-index: 1;
+  line-height: 1.4;
+  padding: 25px;
+  font-family: allround-Font !important;
+  font-size: 30px;
+}
+#faqs .qa-pairs .active dt {
+  color: #d8aaf8 !important;
+}
+#faqs .qa-pairs .faq-toggle {
+  margin-right: 20px;
+  margin-top: 13px;
+  position: absolute;
+  line-height: 1em;
+  text-align: center;
+  color: #000000;
+  font-weight: 700;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  display: table;
+  cursor: pointer;
+}
+#faqs .qa-pairs .faq-toggle .circle {
+  top: 10px;
+  padding: 16px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border: 3px solid #9c8dc3;
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: transform 0.5s;
+}
+#faqs .qa-pairs .faq-toggle .minus,
+#faqs .qa-pairs .faq-toggle .plus {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 4px;
+  background-color: #9c8dc3;
+  left: 44%;
+  margin-left: -5px;
+  top: 50%;
+  margin-top: -1px;
+}
+#faqs .qa-pairs .faq-toggle .plus {
+  position: absolute;
+  /* width: 10px; */
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+  transition: width 0.5s;
+}
+#faqs .qa-pairs dd {
+  padding: 22px 24px 34px 24px;
+  margin-top: -10px;
+  order: 2;
+  color: #fff;
+  background: #121016;
+}
+#faqs .qa-pairs dl.active .faq-toggle {
+  /*background-position: right top;*/
+}
+#faqs .qa-pairs dl.active .faq-toggle .circle {
+  transform: rotate(720deg);
+  transition: transform 0.5s;
+}
+#faqs .qa-pairs dl.active .faq-toggle .plus {
+  width: 0px;
+  transition: width transform 0.5s;
+}
+@media (max-width: 767px) {
+  #faqs .qa-pairs dl {
+    font-size: 1.2em;
+    color: #d8aaf8;
+  }
+}
+/* my own css */
+.token-heading {
+  font-family: allround-Font !important;
+  font-size: 180px;
+}
+.token-heading-2 {
+  font-family: allround-Font !important;
+  font-size: 48px;
+}
+.token-heading-1 {
+  font-family: allround-Font !important;
+  font-size: 90px;
+  margin-top: 100px;
+}
+.token-sub {
+  font-family: "Hind Vadodara", sans-serif !important;
+  color: #d8aaf8;
+  font-weight: bold;
+  font-size: 24px;
+}
+.token-body {
+  font-family: "Hind Vadodara", sans-serif !important;
+  font-size: 20px;
+  line-height: 36px;
+}
+.token-span {
+  color: #d8aaf8;
+  margin-left: 60px;
+}
+.token-box {
+  border-radius: 5px;
+  background-color: #121016;
+  padding: 30px;
+}
+.token-box1 {
+  border-radius: 5px;
+  background-color: #121016;
+  padding: 13px 23px 2px 10px;
+}
+.token-bar-content {
+  padding: 30px 0px 0px 0px;
+}
+.token-points {
+  padding: 80px;
+}
+.token-padding {
+  padding: 0px 80px 0px 80px;
+}
+.token-points > ul > li {
+  font-size: 30px;
+  padding: 20px;
+  list-style-type: none;
+}
+.bullet-1::before {
+  content: "\2022";
+  color: #089ef4;
+  font-weight: bold;
+  display: inline-block;
+  font-size:55px ;
+ margin-left: -30px;
+}
+.bullet-2::before {
+  content: "\2022";
+  color:#5146d1 ;
+  font-weight: bold;
+  display: inline-block;
+  font-size:55px ;
+ margin-left: -30px;
+}
+.bullet-3::before {
+  content: "\2022";
+  color: #c056a6;
+  font-weight: bold;
+  display: inline-block;
+  font-size:55px ;
+  margin-left: -30px;
+}
+.bullet-4::before {
+  content: "\2022";
+  color: #089ff5;
+  font-weight: bold;
+  display: inline-block;
+  font-size:55px ;
+ margin-left: -30px;
+}
+.bullet-5::before {
+  content: "\2022";
+  color: #8300de;
+  font-weight: bold;
+  display: inline-block;
+  font-size:55px ;
+  margin-left: -30px;m;
+}
+.bullet-6::before {
+  content: "\2022";
+  color: #5b50d3;
+  font-weight: bold;
+  display: inline-block;
+  font-size:55px ;
+  margin-left: -30px;
+}
+.bullet-7::before {
+  content: "\2022";
+  color: #c96db3;
+  font-weight: bold;
+  display: inline-block;
+  font-size:55px ;
+ margin-left: -30px;
+}
+/* Tokenomics section css end  */
+/* dashboared section start */
+
+.dash-pad {
+  padding-left: 68px;
+  padding-top: 35px;
+}
+.dash-body-mar {
+  margin-top: 10px;
+  font-family: "Hind Vadodara", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  width: 98%;
+}
+.dash-button-mar {
+  margin-top: 28px;
+}
+.dash-heading {
+  font-family: allround-Font !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+}
+.dash-paragraph {
+  margin-top: 15px;
+  font-family: "Hind Vadodara", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  width: 98%;
+}
+.dashbored-img {
+  width: 1156px;
+  height: 809px;
+  margin-left: -90px;
+}
+.dashbored-padding {
+  margin: 100px 0px 0px 70px;
+}
+
+/* dashbored section end */
+/* roadmap css start  */
+.point-heading{
+  font-size: 25px;
+}
+
+.roadmap-txt{
+  font-size: 18px;
+  font-family: "Hind Vadodara", sans-serif;
+  margin-top: 24px;
+}
+a {
+  color: #7b9d6f;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+/* -------------------------------- 
+
+
+
+/* roadmap css  End*/
+/* White paper start */
+.white-heading-padding{
+  padding: 120px 0px 10px 132px;
+}
+
+.whitepaper-img {
+  width: 1396px;
+  height: 909px;
+}
+
+.whitepaper-heading {
+  font-family: allround-Font !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110px;
+}
+.whitepaper-paragrph {
+  font-family: "Hind Vadodara", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 152%;
+}
+/* white paper end */
+/* team section start */
+.team-heading {
+  font-family: allround-Font !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 77px;
+  line-height: 96px;
+}
+.team-paragraph {
+  font-family: "Hind Vadodara", sans-serif !important;
+  font-style: normal;
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+/* team section end */
+
+/* mech store start */
+.mench-img {
+  width: 1081px;
+  height: 765px;
+}
+/* .mench-padding-top{
+  padding-top: 100px;
+} */
+.mench-paragraph {
+  font-family: "Hind Vadodara", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  margin-top: 15px;
+  width: 115%;
+}
+.mench-padding {
+  margin-top: 140px;
+  padding-left: 50px;
+}
+.mench-heading {
+  font-family: allround-Font !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 110px;
+  width: 120%;
+}
+/* mench store end */
+/* contact start */
+.contct-txt > h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.contct-txt p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+}
+.contct-bg {
+  background-image: url(../img/contct.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.field {
+  width: 100%;
+  height: 52px;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  border: none !important;
+  padding: 12px;
+  border-radius: 5px;
+}
+.field:focus {
+  border: none !important;
+  outline: none !important;
+}
+.text-area {
+  background-color: #0b0b0b;
+  color: #ffffff;
+  border: none !important;
+  padding: 15px;
+  width: 100%;
+  height: 200px !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.text-area:focus {
+  border: none !important;
+  outline: none !important;
+}
+.contact-btn {
+  font-family: allround-Font !important;
+  color: white;
+  font-size: 14px;
+  border-color: #d8aaf8;
+  border-radius: 8px;
+  border-width: 2px;
+  padding: 6px 42px;
+  background-color: transparent;
+}
+.contact-btn:hover {
+  color: white;
+  border-color: #d8aaf8;
+  background-color: #d8aaf8;
+}
+
+/* contact end */
+/* partner section css start */
+
+
+
+#icons {
+  display: none;
+}
+
+.nav-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 12rem;
+ 
+  padding: 0 4rem;
+  /* padding-right: 51%; */
+  top: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+.nav-wrapper .nav-arrows {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-arrows{
+  background: #171718;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.253);;
+ 
+}
+.nav-wrapper .nav-up {
+  visibility: hidden;
+  opacity: 0;
+ 
+}
+.nav-wrapper .nav-up,
+.nav-wrapper .nav-down {
+  width: 2rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.nav-wrapper .nav-up svg,
+.nav-wrapper .nav-down svg {
+  fill: #d8aaf8;
+  width: 100%;
+  max-height: 100%;
+}
+.nav-wrapper .nav-up svg:hover,
+.nav-wrapper .nav-down svg:hover {
+  fill: #d8aaf8;
+}
+.nav-wrapper .nav-up {
+  transform: rotate(180deg);
+}
+.nav-wrapper .nav-line {
+  width: 100%;
+  height: 0.1rem;
+  background: black;
+  margin: 1rem 0;
+  background: #d8aaf8;
+}
+
+.slider-content {
+  position: relative;
+  /* max-width: 112rem;
+    min-width: 480px; */
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider-content .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slider-content .slide:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slider-content .slide:first-child .txt-wrapper span.copy {
+  opacity: 1;
+}
+.slider-content .slide:nth-child(odd) .img {
+  margin-left: 50%;
+  transform: translateY(-100%);
+}
+.slider-content .slide:nth-child(odd) .txt {
+  transform: translateY(100%);
+}
+.slider-content .slide:nth-child(even) .img {
+  transform: translateY(100%);
+}
+.slider-content .slide:nth-child(even) .txt {
+  margin-left: 50%;
+  transform: translateY(-100%);
+}
+.slider-content .slide.active {
+  position: absolute;
+  z-index: 5;
+}
+.slider-content .slide.active .img,
+.slider-content .slide.active .txt {
+  transform: translateY(0);
+}
+
+.slider-container {
+  position: relative;
+  height: 1080px;
+  overflow: hidden;
+}
+.slider-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slider-container .slide-content {
+  position: absolute;
+  display: block;
+  width: 50%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  transition-delay: 0.15s;
+}
+.slider-container .slide-content.txt {
+  display: table;
+  padding: 8rem 14rem;
+  background: white;
+}
+.slider-container .slide-content .txt-wrapper {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+.slider-container .slide-content .txt-wrapper span.copy {
+  position: relative;
+  /* text-transform: uppercase; */
+  /* width: 2rem; */
+  display: block;
+  font-size: 4.5rem;
+  color: #d8aaf8;
+  line-height: 1;
+
+  font-weight: 500;
+  opacity: 0;
+  font-family: "Smooch", cursive;
+}
+.slider-container .slide-content .txt-wrapper h2 {
+  margin: 0;
+  font-size: 4.3rem;
+  margin-bottom: 4rem;
+  line-height: 1;
+  font-weight: 600;
+}
+.slider-container .slide-content .txt-wrapper h2 span {
+  display: block;
+}
+.slider-container .slide-content .txt-wrapper h3 {
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+  font-weight: 400;
+}
+.slider-container .slide-content .txt-wrapper h3 span {
+  color: #ccc;
+}
+.slider-container .slide-content .txt-wrapper a {
+  text-decoration: none;
+  color: #aeacab;
+}
+
+.slider-container .slide-content .txt-wrapper .phone {
+  display: block;
+  color: black;
+  font-size: 1.9rem;
+}
+.slider-container .slide-content .txt-wrapper .subtitle {
+  display: block;
+
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  font-size: 9rem;
+  margin-bottom: 1rem;
+  font-family: allround-Font;
+}
+.slider-container .slide-content .txt-wrapper p.excerpt {
+  margin: 0;
+  color: white;
+  font-size: 20px ;
+  line-height: 1.5;
+}
+.slider-container .slide-content .txt-wrapper span.view-all {
+  color: #aeacab;
+}
+.slider-container .slide-content .txt-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+.slider-container .slide-content .txt-wrapper ul li {
+  position: relative;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+.slider-container .slide-content .txt-wrapper ul li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slider-container .slide-content .txt-wrapper .date-wrapper {
+  width: 20%;
+  float: left;
+  color: #aeacab;
+  text-align: left;
+}
+.slider-container .slide-content .txt-wrapper .date-wrapper .date {
+  font-size: 1.7rem;
+}
+.slider-container .slide-content .txt-wrapper .date-wrapper .month {
+  font-size: 1rem;
+}
+.slider-container .slide-content .txt-wrapper .post-wrapper {
+  width: 80%;
+  float: left;
+}
+.slider-container .slide-content .txt-wrapper .post-wrapper .post-title {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+.slider-container .slide-content .txt-wrapper .post-wrapper .post-title a {
+  display: block;
+  color: black;
+  cursor: pointer;
+}
+.slider-container
+  .slide-content
+  .txt-wrapper
+  .post-wrapper
+  .post-title
+  a:hover {
+  text-decoration: underline;
+}
+.slider-container .slide-content .txt-wrapper .post-wrapper .post-info {
+  display: block;
+  color: #aeacab;
+  font-size: 1rem;
+}
+.slider-container .slide-content .txt-wrapper .post-wrapper .post-info:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.slider-container .slide-content .txt-wrapper .post-wrapper .post-info ul {
+  margin: 0;
+}
+.slider-container .slide-content .txt-wrapper .post-wrapper .post-info li {
+  float: left;
+  margin: 0 0.5rem;
+}
+.slider-container
+  .slide-content
+  .txt-wrapper
+  .post-wrapper
+  .post-info
+  li:first-child {
+  margin-left: 0;
+}
+.slider-container .slide-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/* partner Sec Mbl css Start */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #000;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+  line-height: 0 !important;
+font-size: 25px !important;
+color: #fff !important;
+box-shadow: 0px 0px 15px #000000 !important;
+}
+ .copy {
+  position: relative !important;
+ text-align: left;
+  display: block !important;
+  font-size: 4rem !important;
+  color: #d8aaf8 !important;
+  line-height: 1 !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+  font-family: "Smooch", cursive !important;
+}
+.subtitle h2 {
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 0rem;
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+  font-family: allround-Font;
+}
+.excerpt {
+  margin: 0;
+  color: white;
+  font-size: 14px;
+ text-align: left;
+  line-height: 1.4;
+}
+/* partner Sec Mbl css End */
+
+
+
+
+
+
+
+/* partner section css end */
+/* Footer css Start */
+.fotter-div {
+  background-color: #121016;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer-list li {
+  display: inline;
+  list-style: none;
+}
+.footer-list .footer-li .footer-links {
+  color: white;
+  font-family: "Hind Vadodara", sans-serif;
+  padding: 8px;
+  font-weight: 500;
+}
+.footer-list .footer-li .footer-links:hover {
+  color: #d8aaf8 !important;
+ 
+}
+.copy-right {
+  font-weight: 500;
+}
+
+/* Media querys starts  */
+@media only screen and (max-width: 600px) {
+  .footer-list .footer-li .footer-links {
+    font-size: 9px;
+    padding: 5px;
+  }
+  .copy-right {
+    font-size: 10px;
+  }
+  .modal-content{
+    width: 60% !important;
+  }
+  .modal.in .modal-dialog{
+    display: flex !important ;
+    justify-content: center !important;
+  }
+}
+@media only screen and (min-device-width: 650px) and (max-device-width: 1024px) {
+  .footer-list .footer-li .footer-links {
+    color: white;
+    font-family: "Hind Vadodara", sans-serif;
+    padding: 8px;
+    font-weight: 500;
+  }
+
+}
+/* Media querys end  */
+/* Footer css end */
+
+/* sider-bar css start */
+.social-div {
+  position: fixed;
+  right: 50px;
+  top: 30%;
+  z-index: 999;
+  background: linear-gradient(
+    113.32deg,
+    rgba(248, 237, 255, 0.15) 0%,
+    rgba(248, 237, 255, 0.02) 100%
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+.social-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: linear-gradient(180deg, #f8edff 0%, rgba(248, 237, 255, 0) 81.38%)
+    border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  /* padding: 30px; */
+}
+.social-div ul {
+  list-style: none;
+}
+.social-div ul li {
+  margin: 20px 10px;
+}
+
+/* sider-bar css End */
+
+/* extra */
+.section-special {
+  height: 950px;
+}
+.hero-img {
+  width: 1268px;
+  height: 918px;
+}
+.whylof-img {
+  width: 1126px;
+  height: 693px;
+}
+.lof-section-margin {
+  margin-top: 200px;
+}
+.lof-section-paragraph-top {
+  margin-top: 16px;
+}
+.lof-section-paragraph {
+  font-family: "Hind Vadodara", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  margin-top: 25px;
+  width: 98%;
+}
+.hero-margin {
+  margin-top: 100px;
+}
+.lof-platfrom-heading-margin {
+  font-family: "Hind Vadodara", sans-serif !important;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  width: 180%;
+  margin-top: 14px;
+}
+.lof-plateform-heading-padding {
+  padding: 130px 0px 10px 132px;
+}
+.lof-plateform-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  width: 175%;
+}
+.lofplateform-img {
+  width: 1380px;
+  height: 864px;
+}
+.lof-plateform-paragraph {
+  font-family: "Hind Vadodara", sans-serif !important;
+  margin-top: 23px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  width: 169%;
+}
+.sub-heading {
+  font-family: "Hind Vadodara", sans-serif !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  width: 150%;
+}
+.lofplatform-img-2 {
+  width: 1090px;
+  height: 724;
+}
+.feature-logo {
+  height: 50px !important;
+  width: 50px !important;
+  margin-right: 12px !important;
+  font-family: "Hind Vadodara", sans-serif !important;
+}
+.feature-section-p {
+  font-size: 26px;
+  margin-top: 17px;
+  font-family: "Hind Vadodara", sans-serif !important;
+  color: white !important;
+}
+.feature-margin {
+  margin-top: 200px !important;
+}
+
+/* Model css Start  */
+.modal-content {
+  background: transparent !important;
+  border: none !important;
+}
+.modal-footer {
+  border: none !important;
+}
+.modal-header {
+  border: none !important;
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: auto !important;
+    margin: auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.close {
+  color: white !important;
+  opacity: 1 !important;
+}
+.carousel-control {
+  opacity: 1 !important;
+}
+/* Model css End  */
+
+
+
+
+
+/***************** Hero Buttons  *************/
+
+
+
+
+/* pop up */
+.modal.in .modal-dialog{
+  top: 30%;
+}
+.modal-content{
+  width: 30% !important;
+  background: #121016 !important;
+  padding: 10px 30px 20px 30px;
+}
+.modal-header {
+padding: 0px !important ;
+}
+
+.set-pop{
+  top: 8% !important;
+}
+.item  img{
+  width: 100% !important;
+}
+
+/* scroll bar  */
+textarea::-webkit-scrollbar {
+  width: 12px;
+  background-color: #0b0b0b;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #d8aaf8;
+ }
+
+
+ .custom-sty{
+  width: 13% !important;
+  background: #121016 !important;
+  padding: 10px 30px 20px 30px;
+ }
+
+
+
+
+ @media only screen and (max-width: 600px)
+ {
+.feature-margin {
+    margin-top: 100px !important;
+}
+
+.modal-content{
+  width: 90% !important;
+}
+.set-pop {
+  top: 20% !important;
+}
+ }
+@media only screen 
+  and (min-device-width: 610px) 
+  and (max-device-width: 1024px){
+    .modal-content{
+      width: 80% !important;
+    }
+  }
+  @media only screen 
+  and (min-device-width: 1025px) 
+  and (max-device-width: 1259px){
+    .modal-content{
+      width: 80% !important;
+    }
+  }
+
+/***************** pie graph shake effect *************/
+
+.shake-effect:hover {
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+ /************** icon change on hover  ****************/
+
+ .card {
+  
+  position: relative;
+  display: inline-block;
+ 
+}
+.card .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.card:hover .img-top {
+  display: inline;
+}
+
+
+/************ Back to top button  *********/
+#top-button {
+  display: inline-block;
+  background-color: rgba(32, 31, 31, 0.322);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#top-button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.5em;
+  line-height: 0px;
+  color: #fff;
+  position: relative;
+  top: -33px;
+}
+
+#top-button.show {
+  opacity: 1;
+  visibility: visible;
+}
+.top-btn.show{
+  opacity: 1;
+  visibility: visible;
+}
+.top-btn:hover {
+  transition: 1s ease-in-out;
+  background: transparent;
+}
+.top-btn {
+
+  
+  display: inline-block;
+  background-color: rgba(32, 31, 31, 0.322);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  
+cursor: pointer;
+background: transparent;
+border: 2px solid rgba(255, 255, 255, 0.103);
+border-radius: 0px;
+outline: none;
+transition: 1s ease-in-out;
+margin-top: 50px;   
+}
+.top-btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+
+
+.bottomm > a{
+margin-left: 14px;
+}
+
+.text-check{
+display: flex;
+}
+
+.check{
+  width: 50px; 
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+
+.map-container{
+  margin-top: 70px;
+}
+.map-point-sm{
+  background-color: transparent;
+  border: none;
+}
+
+.hide {
+  display: none !important;
+} 
+.link{
+  font-size: 18px;
+  font-family: "Hind Vadodara", sans-serif;
+
+}
+
+/* roadmap2 css end */
+
+
+
+/* page loader css  */
+
